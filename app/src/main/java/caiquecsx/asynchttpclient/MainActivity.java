@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView tv = (TextView) findViewById(R.id.textView);
 
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://mensagensprontas.esy.es/JsonImagePorCategoria.php?categoria=Engraçadas", new AsyncHttpResponseHandler() {
+        client.get("http://localhost/JsonImagePorCategoria.php?categoria=Engraçadas", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 JSONObject arr = null;
